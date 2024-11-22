@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Leitura - terror</title>
+    <link rel="stylesheet" href="terror.css">
+</head>
+<body>
+    
+    <div class="barraInicial"></div>
+    
+    <header>
+        <div class="containerLogo"> 
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+          <a href="favorito.html">  <img src="imgprojeto/coracao-removebg-preview.png" alt=""></a>
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+            <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin">
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+            <span id="contador">0</span>
+        </div>
+    </header>
+
+    <div class="barraAdicional"></div>
+     
+    
+
+    
+    <div class="terror">
+        <img src="imgprojeto/Nos recantos mais sombrios, um convite persiste adentre o desconhecido, onde segredos antigos e desejos perigosos se entrelaçam em uma dança de poder e mistério. (1) (2).png" alt="Imagem do Romance">
+    </div>
+
+    <footer>
+        <div class="junto">
+            <div class="textol">
+        <p class="big">Terror</p></div>
+        <a href="index.html"><img src="imgprojeto/swta-removebg-preview.png" alt=""></a>
+    </div>
+    </footer>
+
+    <!-- Livros -->
+    <div class="containerLivros">
+        <div class="livro">
+            <img src="imgprojeto/lady.jpg" alt="Lady Killers">
+            <div class="informacoes">
+                <h1>Lady Killers</h1>
+                <h5 class="autor">Tori Telfer</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+              </div>   
+              <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+              <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+           
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/vilarejo.jpg" alt="A Seleção">
+            <div class="informacoes">
+                <h1>O Vilarejo</h1>
+                <h5 class="autor">Rafael Montes</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/cidadeHorrores.jpg" alt="A Cidade dos Horrores">
+            <div class="informacoes">
+                <h1>A cidade dos Horrores</h1>
+                <h5 class="autor">Célio Marques</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+                 <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/vidasEternas.jpg" alt="Vidas Eternas">
+            <div class="informacoes">
+                <h1>Vidas Eternas</h1>
+                <h5 class="autor">Victoria Aveyard</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+                 <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/primas.jpg" alt="Primas do Terror">
+            <div class="informacoes">
+                <h1>Primas do Terror</h1>
+                <h5 class="autor">Christina Lauren</h5>
+                <span>R$18.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/annabelle.jpg" alt="Annabelle">
+            <div class="informacoes">
+                <h1>Annabelle</h1>
+                <h5 class="autor">Lina Bengtsdotter</h5>
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/horrorNoire.jpg" alt="Horror Noire">
+            <div class="informacoes">
+                <h1>Horror Noire</h1>
+                <h5 class="autor">Robin R.Means</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    </div>
+
+    <footer class="final">
+        
+    </footer>
+    <script src="terror.js"></script>
+    <script>
+        const logo = document.getElementById("logo")
+        function animar() {
+           logo.style.animation=""
+           setTimeout(() =>logo.style.animation="arrasta 1s linear",5)
+           logo.style.left="280px"
+        }
+        function voltar() {
+            logo.style.animation=""
+           setTimeout(() =>logo.style.animation="voltar 1s linear",5)
+           logo.style.left=""
+        }
+    </script>
+</body>
+</html>

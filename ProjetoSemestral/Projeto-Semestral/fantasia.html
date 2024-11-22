@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Leitura</title>
+    <link rel="stylesheet" href="fantasia.css">
+</head>
+<body>
+    
+     
+     <div class="barraInicial"> </div>
+     <header>
+
+        <div class="containerLogo"> 
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+          <a href="fantasia.html">  <img src="imgprojeto/coracao-removebg-preview.png" alt=""></a>
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+            <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin">
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+            <span id="contador">0</span>
+        </div>
+        
+
+   </header>
+  
+             
+
+    <div class="barraAdicional"></div>
+
+    <div class="fantasiaa">
+        <img src="imgprojeto/Nos recantos mais sombrios, um convite persiste adentre o desconhecido, onde segredos antigos e desejos perigosos se entrelaçam em uma dança de poder e mistério. (1).png" alt="">
+    </div>
+
+    <footer>
+        <div class="junto">
+            <div class="textol">
+        <p class="big">Fantasia</p></div>
+       <a href="index.html"> <img src="imgprojeto/swta-removebg-preview.png" alt=""></a>
+    </div>
+    </footer>
+    
+    
+    
+    
+    <!-- Div containerLivros, guarda todos os livros --> 
+    <div class="containerLivros">
+        <div class="livro">
+            <img src="imgprojeto/sombraeossos.jpg" alt="Sombra e Ossos">
+            <div class="informacoes">
+                <h1>Sombra e Ossos</h1>
+                <h5 class="autor">Leigh Bardugo</h5>
+                <span>R$10.00</span>
+                <!-- este button tem duas funcionalidades ao clicar, mensagem e o contador lá em cima -->
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+            </div>
+            <!-- Depois que clica no coração além de mudar de cor, aparece uma notificação também" -->
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+             </div>
+
+
+    
+        <div class="livro">
+            <img src="imgprojeto/duna.png" alt="Duna">
+            <div class="informacoes">
+                <h1>Duna</h1>
+                <h5 class="autor">Frank Herbert</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+
+
+        <div class="livro">
+            <img src="imgprojeto/principecruel.jpg" alt="O Príncipe Cruel">
+            <div class="informacoes">
+                <h1>O Príncipe Cruel</h1>
+                <h5 class="autor">Holly Black</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/cortedenevoaefuria.jpg" alt="Acotar">
+            <div class="informacoes">
+                <h1>Acotar</h1>
+                <h5 class="autor">Sarah J.Mass</h5> 
+                <span>R$20.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+               
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/umTomMaisEscuro.jpg" alt="Tons de Magia">
+            <div class="informacoes">
+                <h1>Tons de Magia</h1>
+                <h5 class="autor">V.E.Schwab</h5>
+                <span>R$18.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/arainhavermelha.jpg" alt="A Rainha Vermelha">
+            <div class="informacoes">
+                <h1>A Rainha Vermelha</h1>
+                <h5 class="autor">Victoria Averyard</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/coroadesombras.jpg" alt="Coroa das Sombras">
+            <div class="informacoes">
+                <h1>Coroa das Sombras</h1>
+                <h5 class="autor">Levenseller</h5>
+                <span>R$20.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/tronodevidro.jpg" alt="Trono de Vidro">
+            <div class="informacoes">
+                <h1>Trono de Vidro</h1>
+                <h5 class="autor">Sarah J.Maas</h5>
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/luzesdanoite7.jpg" alt="Luzes do Norte">
+            <div class="informacoes">
+                <h1>Luzes Do Norte</h1>
+                <h5 class="autor">Sarah J.Maas</h5>
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                </div>
+                <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+                <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+             </div>
+       </div>
+    
+        
+    
+       
+
+
+    <footer class="final">  </footer>
+    
+    
+
+
+
+
+    <script src="fantasia.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Leitura</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body  onload="iniciarPerguntaComNarracao()">
+
+    
+ 
+     <div class="barraInicial"> </div>
+     <header>
+
+        <div class="containerLogo"> 
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+           <a href="favorito.html"> <img src="imgprojeto/coracao-removebg-preview.png" alt=""></a>
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+           <a href="login.html"> <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin"></a>
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+        </div>
+
+   </header>
+
+    <div class="barraAdicional"></div>
+
+
+    <div class="btcarrossel">
+    <div class="container">
+        <div class="carrossel">
+            <div class="slide">
+                <img src="imgprojeto/3.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="imgprojeto/Inserir um subtítulo (2).png" alt="">
+            </div>
+            <div class="slide">
+                <img src="imgprojeto/2.png" alt="">
+            </div>
+        </div>
+        <button class="troca" name="troca" type="radio" id="radio1" onclick="radio1()"></button>
+        <button class="troca" name="troca" type="radio" id="radio2" onclick="radio2()"></button>
+        <button class="troca" name="troca" type="radio" id="radio3" onclick="radio3()"></button>
+</div>
+  </div>
+      
+      <div class="icones">
+        <div class="fantasia">
+            <a href="fantasia.html"><img src="imgprojeto/iconeCastelo.png" alt="" class="fantasiaIMG"></a>
+            
+            </div>
+         <div class="romance">
+            <a href="romance.html"><img src="imgprojeto/iconeRomance.png" alt="" class="romanceIMG"></a>
+         </div>
+         <div class="classico">
+           <a href="classico.html"> <img src="imgprojeto/iconePena.png" alt="" class="classicoIMG"></a>
+         </div>
+         <div class="terror">
+           <a href="terror.html"> <img src="imgprojeto/iconeFantasma.png" alt="" class="terrorIMG"></a>
+         </div>
+
+           </div>
+
+   <div class="seta">
+    <div class="tudo">
+        <div class="tudocaixa">
+         <div class="caixa">
+            <img src="imgprojeto/pertoDocora.png" alt="">
+            <h5>Perto do Coração Selvagem</h5>
+            <h5>Clarice Lispector</h5>
+            <h5>1943</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$20.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/duna.png" alt="">
+            <h5>Duna</h5>
+            <h5>Frank herbert</h5>
+            <h5>1920</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$15.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/garotasDaneve.jpg" alt="">
+            <h5>Garotas de Neve e Vidro</h5>
+            <h5>Melissa Bashardoust</h5>
+            <h5>2017</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$25.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/ocortico.png" alt="">
+            <h5>O Cortiço</h5>
+            <h5>Aluíso Azevedo</h5>
+            <h5>1890</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$18.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/éassimqueacaba.png" alt="">
+            <h5>É assim que acaba</h5>
+            <h5>Colleen Hoover</h5>
+            <h5>2016</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$20.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/mentirosos.png" alt="">
+            <h5>mentirosos</h5>
+            <h5>E.Lockhart</h5>
+            <h5>2014</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$10.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/opaciente.png" alt="">
+            <h5>O Paciente</h5>
+            <h5>Jasper De WITT</h5>
+            <h5>2021</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$30.00</span></p>
+         </div>
+         <div class="caixa">
+            <img src="imgprojeto/domcasmurro.jpg" alt="">
+            <h5>Dom Casmurro</h5>
+            <h5>Machado de Assis</h5>
+            <h5>1943</h5>
+            <div class="linha"></div>
+            <p>A partir de: <span>R$15.00</span></p>
+         </div>
+        </div>
+        <button class="controle" id="anterior" onclick="anterior()"> < </button>
+        <button class="controle" id="proximo" onclick="proximo()"> > </button>
+    </div>
+</div>
+
+
+
+<div class="linhaFinal"></div>
+<div class="infoDois">
+     <h2>Explore nossa biblioteca digital inclusiva, com  parceiras integradas ao site.</h2>
+</div>
+
+<div class="escolas">
+    <img class="sesi" src="imgprojeto/sesi.png" alt="Sesi">
+    <img class="objetivo" src="imgprojeto/objetivo.png" alt="Objetivo">
+    <img class="marista" src="imgprojeto/marista.png" alt="Marista">
+</div>
+
+
+
+
+<footer class="final">
+    
+</footer>
+
+<script src="main.js"></script>
+<script>
+     
+ // Função que inicia a narração com uma pergunta 3 segundos após o carregamento da página
+ function iniciarPerguntaComNarracao() {
+            // setTimeout aguarda 3000 milissegundos (3 segundos) e então chama a função fazerPergunta
+            setTimeout(fazerPergunta, 3000);
+        }
+
+        // Função que cria e executa a narração da pergunta00
+        function fazerPergunta() {
+            const pergunta = "Olá, bem-vindos ao nosso site! Para qual página você deseja ir? As opções são: Login, Favoritos, Compras, Fantasia, Romance, Clássico ou Terror"; // Texto da pergunta a ser narrada
+
+            // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+            const narrador = new SpeechSynthesisUtterance(pergunta);
+
+            // Define o idioma da narração como português do Brasil
+            narrador.lang = 'pt-BR';
+
+            // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+            narrador.onend = iniciarReconhecimentoDeVoz;
+
+            // Executa a narração com o texto da pergunta
+            window.speechSynthesis.speak(narrador);
+            // fazerPergunta2()
+        }
+        function fazerPergunta2() {
+            const pergunta = "tudo bem"; // Texto da pergunta a ser narrada
+
+            // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+            const narrador = new SpeechSynthesisUtterance(pergunta);
+
+            // Define o idioma da narração como português do Brasil
+            narrador.lang = 'pt-BR';
+
+            // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+            narrador.onend = iniciarReconhecimentoDeVoz;
+
+            // Executa a narração com o texto da pergunta
+            window.speechSynthesis.speak(narrador);
+        }
+
+        // Função para iniciar o reconhecimento de voz e capturar a resposta do usuário
+        function iniciarReconhecimentoDeVoz() {
+            // Cria um novo objeto de reconhecimento de voz usando SpeechRecognition (ou webkitSpeechRecognition para compatibilidade)
+            const reconhecimento = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            
+            // Define o idioma de reconhecimento como português do Brasil
+            reconhecimento.lang = 'pt-BR';
+
+            // Inicia o reconhecimento de voz
+            reconhecimento.start();
+
+            // Evento que é chamado quando uma resposta de voz é capturada
+            reconhecimento.onresult = (evento) => {
+                // Armazena a transcrição da resposta em texto minúsculo para facilitar a comparação
+                const resposta = evento.results[0][0].transcript.toLowerCase();
+
+                // Chama a função redirecionarUsuario com a resposta capturada
+                redirecionarUsuario(resposta);
+            };
+
+            // Evento de erro que ocorre se o reconhecimento de voz falhar
+            reconhecimento.onerror = (erro) => {
+                // Exibe o erro no console e mostra um alerta ao usuário
+                console.error("Erro no reconhecimento de voz:", erro);
+                alert("Desculpe, não consegui entender. Por favor, tente novamente.");
+            };
+        }
+
+        // Função que verifica a resposta do usuário e redireciona conforme a palavra detectada
+        function redirecionarUsuario(resposta) {
+            if (resposta.includes("login")) {
+        window.location.href = "login.html";
+    } else if (resposta.includes("favoritos")) {
+        window.location.href = "favorito.html";
+    } else if (resposta.includes("compras")) {
+        window.location.href = "compras.html";
+    } else if (resposta.includes("fantasia")) {
+        window.location.href = "fantasia.html";
+    } else if (resposta.includes("romance")) {
+        window.location.href = "romance.html";
+    } else if (resposta.includes("clássico")) {
+        window.location.href = "classico.html";
+    } else if (resposta.includes("terror")) {
+        window.location.href = "terror.html";
+    } else {
+                // Se a palavra "YouTube" não for detectada, avisa o usuário para tentar novamente
+                alert("Palavra não reconhecida. Tente dizer novamente");
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

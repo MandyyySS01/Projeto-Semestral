@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="container-principal">
+        <div id="logo" class="logo">
+           <a href="index.html"> <img src="imgprojeto/1-removebg-preview (1).png" alt="Voz da Leitura"></a>
+        </div>
+    
+        <!-- Cadastro -->
+        <div class="tudo">
+            <h1>Inscrever-se</h1>
+
+            <div class="campo">
+                <div class="junto">
+                  <input type="Nome do Usuário" placeholder="Nome do Usuário" id="">
+                    <img src="imgprojeto/perfil.png" alt="Ícone de Usuario" class="icone">
+                </div>
+                <div class="linha"></div>
+            </div>
+    
+    
+            <div class="campo">
+                <div class="junto">
+                  <input type="email" placeholder="email" id="">
+                    <img src="imgprojeto/email.png" alt="Ícone de Email" class="icone">
+                </div>
+                <div class="linha"></div>
+            </div>
+    
+            <div class="campo">
+                <div class="junto">
+                    <input type="password" placeholder="senha" id="">
+                    <img src="imgprojeto/cadeado.png" alt="Ícone de Cadeado" class="icone">
+                </div>
+                <div class="linha"></div>
+            </div>
+    
+            <button class="botao">cadastrar-se</button>
+            <div class="links">
+               <button onclick="voltar()">Já tenho uma conta</button>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+        </div>
+    
+    
+        <!-- Login -->
+    <div class="tudo">
+        <h1>Login</h1>
+
+        <div class="campo">
+            <div class="junto">
+              <input type="email" placeholder="email" id="">
+                <img src="imgprojeto/email.png" alt="Ícone de Email" class="icone">
+            </div>
+            <div class="linha"></div>
+        </div>
+
+        <div class="campo">
+            <div class="junto">
+                <input type="password" placeholder="senha" id="">
+                <img src="imgprojeto/cadeado.png" alt="Ícone de Cadeado" class="icone">
+            </div>
+            <div class="linha"></div>
+        </div>
+
+        <button class="botao">Entrar</button>
+        <div class="links">
+            <button onclick="animar()">Criar uma conta</button>
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+    </div>
+</div>
+    <script>
+        const logo = document.getElementById("logo")
+        function animar() {
+           logo.style.animation=""
+           setTimeout(() =>logo.style.animation="arrasta 1s linear",5)
+           logo.style.left="280px"
+        }
+        function voltar() {
+            logo.style.animation=""
+           setTimeout(() =>logo.style.animation="voltar 1s linear",5)
+           logo.style.left=""
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Leitura - Classico</title>
+    <link rel="stylesheet" href="classico.css">
+</head>
+<body>
+    
+    <div class="barraInicial"></div>
+    
+    <header>
+        <div class="containerLogo"> 
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+           <a href="favorito.html"> <img src="imgprojeto/coracao-removebg-preview.png" alt=""></a>
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+            <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin">
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+            <span id="contador">0</span>
+        </div>
+
+    </header>
+
+
+    <div class="barraAdicional"></div>
+
+    <div class="classico">
+        <img src="imgprojeto/A complexidade das almas humanas se desenrola nas páginas, revelando a fragilidade das relações e a profundidade da condição humana. (2).png" alt="Imagem do Classico">
+    </div>
+
+    <footer>
+        <div class="junto">
+            <div class="textol">
+        <p class="big">Clássico</p></div>
+        <a href="index.html"><img src="imgprojeto/swta-removebg-preview.png" alt=""></a>
+    </div>
+    </footer>
+
+    
+    <div class="containerLivros">
+        <div class="livro">
+            <img src="imgprojeto/memoria.jpg" alt="Memorias Postumas">
+            <div class="informacoes">
+                <h1>Memórias Póstumas</h1>
+                <h5 class="autor">Machado de Assis</h5>
+                <span>R$19.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/vidas secas.jpg" alt="Vidas secas">
+            <div class="informacoes">
+                <h1>Vidas Secas</h1>
+                <h5 class="autor">Graciliano Ramos</h5> 
+                <span>R$14.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+               
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/orgulho.jpg" alt="Orgulho e Preconceito">
+            <div class="informacoes">
+                <h1>Orgulho e Preconceito</h1>
+                <h5 class="autor">Jane Austen</h5> 
+                <span>R$25.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+               
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/domcasmurro.jpg" alt="Dom Casmurro">
+            <div class="informacoes">
+                <h1>Dom Casmurro</h1>
+                <h5 class="autor">Machado de Assis</h5>
+                <span>R$16.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/sofrimento.png" alt="Werther">
+            <div class="informacoes">
+                <h1>Werther</h1>
+                <h5 class="autor">Johann Wolfgang</h5>
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/amordeperdicao.png" alt="amor de perdicao">
+            <div class="informacoes">
+                <h1>Amor de Perdição</h1>
+                <h5 class="autor">Camilo C. Branco</h5>
+                <span>R$25.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/areia.jpg" alt="Capitaes de Areia">
+            <div class="informacoes">
+                <h1>Capitães de Areis</h1>
+                <h5 class="autor">Jorge  Amado</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/iraceema.png" alt="Iracema">
+            <div class="informacoes">
+                <h1>Iracema</h1>
+                <h5 class="autor">José de Alencar</h5>
+                <span>R$16.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+        <div class="livro">
+            <img src="imgprojeto/iraceema.png" alt="O cortico">
+            <div class="informacoes">
+                <h1>O Cortiço</h1>
+                <h5 class="autor">Alúsio Azevedo</h5>
+                <span>R$18.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                
+            </div>
+            <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+            <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+        </div>
+
+    </div>
+
+    <footer class="final">
+       
+    </footer>
+    <script src="classico.js"></script>
+
+</body>
+</html>

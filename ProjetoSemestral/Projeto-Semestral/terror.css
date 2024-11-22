@@ -1,0 +1,314 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "pay" ;
+    src: url(PaytoneOne-Regular.ttf);
+}
+
+/* Estilos gerais para a barra inicial e o layout */
+.barraInicial {
+    background-color: #9E6730; 
+    height: 15px;
+}
+
+.containerLogo {
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.barraPesquisa {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.minhaLista {
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.minhaLista img {
+    width: 70px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.login {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.iconLogin {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.carrinho img {
+    cursor: pointer;
+    font-size: 20px;
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barraAdicional {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #9E6730;
+    height: 15px;
+}
+
+
+
+.terror {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    height: 100vh; /* Faz o container ocupar toda a altura da tela */
+    overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+    margin-top: 15px;
+}
+
+.terror img {
+   width: 1400px;
+   height: 80%;
+}
+
+.junto{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.junto img{
+    height: 48px;
+    margin-right: 60px;
+    cursor: pointer; /* Mostra que a seta é clicável */
+}
+
+.textol{
+    font-size: 30px;
+    margin-left: 23px;
+    background-color: #f9f1d7;
+    height: 55px;
+    width: 250px;
+    font-family:"pay";
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+   padding-bottom: 6px;
+   border: 2px solid black;
+}
+
+
+.containerLivros {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    justify-content: space-between; /* Distribui o espaço entre os livros */
+    gap: 15px; /* Espaçamento entre os livros */
+    padding: 20px;
+}
+
+.livro {
+    position: relative; /* Permite posicionar o coração em relação ao contêiner */
+    display: flex;
+    flex-direction: row; /* Organiza a imagem e as informações lado a lado */
+    gap: 15px; /* Espaço entre a imagem e as informações */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 48%; /* Cada livro ocupará 48% da largura, para que dois livros caibam por linha */
+    margin-bottom: 20px;
+    border: 2px solid #a4a5a9; /* Borda preta de 2px */
+    border-radius: 10px; /* Arredondamento das bordas */
+    box-sizing: border-box; /* Inclui a borda no cálculo do tamanho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo */
+}
+
+.livro img {
+    width: 40%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column; /* Organiza as informações em coluna */
+    justify-content: center; /* Centraliza as informações verticalmente */
+    align-items: center; /* Centraliza as informações horizontalmente */
+    width: 55%; /* Garante que as informações ocupem a maior parte do espaço */
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 40px;
+    margin: 25px 0; /* Espaço entre o título e o autor */
+}
+
+h5 {
+    font-size: 30px;
+    color: #555;
+    margin: 25px 0; /* Espaçamento entre o autor e o título */
+}
+
+.linha {
+    width: 80%; /* Ajusta o tamanho da linha (agora 80% da largura das informações) */
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0; /* Espaço acima e abaixo da linha */
+}
+
+span {
+    font-size: 35px;
+    color: #9E6730;
+    font-weight: bold;
+}
+
+span {
+    font-size: 30px;
+    color: #9E6730;
+    font-weight: bold;
+}
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9E6730; /* Adiciona um fundo leve ao rodapé */
+    padding: 20px;
+    margin-top: 30px; /* Espaçamento acima para separar do conteúdo */
+    text-align: center;
+}
+
+
+
+/* Estilo do carrinho */
+.carrinho {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contador */
+.botao-comprar {
+    padding: 15px 30px; /* Mantém o espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte */
+    background-color: black; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%; /* Define uma largura maior para o botão, mas não remove a linha */
+    margin-top: 30px;
+}
+.carrinho {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo do carrinho */
+.carrinho {
+    position: relative; /* Define a base para o posicionamento absoluto do contador */
+    display: inline-block; /* Garante que o carrinho ocupe espaço apenas necessário */
+}
+
+/* Estilo do carrinho */
+.carrinho {
+    position: relative; /* Defina o carrinho como posição relativa para o contador */
+    display: inline-block; /* Garante que o carrinho ocupe espaço necessário */
+}
+
+#contador {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Ajuste a posição horizontal para mover mais à direita */
+    background-color: #9E6730;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo da notificação */
+.notificacao {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E6730;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+.notificacao.show {
+    display: block;
+    opacity: 1;
+}
+/* Coração */
+.heart {
+    position: absolute; /* Posiciona no canto superior direito do contêiner */
+    top: 10px;
+    right: 10px;
+    width: 40px; /* Tamanho inicial */
+    height: 40px; /* Tamanho inicial */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza mudanças no tamanho e na posição */
+}
+
+.heart:active {
+    transform: scale(1.1); /* Efeito de clique */
+}
+/* Estilo da notificação de favorito */
+.notificacaoFavorito {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9E6730; /* Usando sua cor personalizada */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+    font-size: 14px;  /* Tamanho da fonte ajustado */
+    font-weight: bold;  /* Em negrito para destaque */
+}
+
+.notificacaoFavorito.show {
+    display: block;
+    opacity: 1;
+}

@@ -1,0 +1,306 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.barraInicial{
+      background-color: #9E6730; 
+        height: 15px;
+    
+}
+.conteinerLogo {
+    position: relative;
+}
+
+.logo {
+    width: 80px; 
+    height: auto; 
+     
+}
+
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 1400px;
+   
+
+}
+.carrossel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    margin-top: 85px;
+}
+.slide {
+    transition: opacity 1s ;
+
+}
+.slide img {
+    width: 1400px;
+   height: 80%;
+
+}
+.troca {
+    position: absolute;
+    
+    top: 85%;
+    z-index: 10;
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 360px;
+    }
+#radio1 {
+    left: 44%;
+    
+}
+#radio2 {
+    left: 50%;
+    
+}
+#radio3 {
+    right: 40%;
+    
+}
+.btcarrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tudo {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+   
+}
+.caixa {
+    background-color: #Ffff;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 2px solid #a4a5a9; /* Borda preta de 2px */
+    border-radius: 10px; /* Arredondamento das bordas */
+}
+.caixa img {
+    width: 200px;
+    padding: 30px;    
+}
+.linha {
+    background-color: #939393;
+    height: 2px;
+    margin: 20px 30px;
+}
+.caixa h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+.caixa p {
+    font-size: 25px;
+    
+}
+.caixa span {
+    font-weight: 800;
+    color: #9E6730;
+}
+.tudocaixa {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+.seta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.controle {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 360px;
+
+}
+#anterior {
+    left: 10px;
+}
+#proximo {
+    right: 10px;
+    
+}
+.barraInicial {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #9E6730;
+    height: 15px;
+}
+
+.containerLogo {
+    position: relative;
+}
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-left: 10px;
+}
+
+.barraPesquisa {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px; 
+    height: 35px; 
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.minhaLista {
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.minhaLista img {
+    width: 70px;
+}
+h1 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.login {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.iconLogin {
+    width: 150px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.carrinho img{
+    
+ cursor: pointer;
+ font-size: 20px;
+ width: 120px;
+ display: block;
+ margin: 0 auto; /* Centraliza horizontalmente */
+ margin-top: 12px;
+    
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.barraAdicional {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #9E6730;
+    height: 15px;
+}
+
+
+
+.icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fantasia IMG {
+    width: 300px; 
+    height: auto; 
+    margin-left: 10px;
+}
+.romance IMG {
+    width: 300px; 
+    height: auto; 
+    margin-left: 10px;
+}
+.classico IMG {
+    width: 300px; 
+    height: auto; 
+    margin-left: 10px;
+}
+.terror IMG {
+    width: 300px; 
+    height: auto; 
+    margin-left: 10px;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    
+}
+.span {
+    font-size: 25px;
+}
+.texto{
+    font-size:15;
+}
+.final {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#9E6730; /* Adiciona um fundo leve ao rodapé */
+    padding: 20px;
+    margin-top: 30px; /* Espaçamento acima para separar do conteúdo */
+    text-align: center;
+}
+
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px; 
+    margin-top: 30px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 30px;
+}
+.escolas {
+    display: flex; /* Torna os itens filhos flexíveis */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    gap: 20px; /* Adiciona espaço entre as imagens, se necessário */
+    margin-top: 60px;
+}
+.sesi {
+    width: 180px; /* Exemplo de alteração de largura */
+    margin-right: 15px; /* Exemplo de espaçamento entre as imagens */
+}
+
+.objetivo {
+    width: 200px; /* Exemplo de alteração de largura */
+    margin-right: 15px; /* Exemplo de espaçamento entre as imagens */
+}
+
+.marista {
+    width: 180px; /* Exemplo de alteração de largura */
+}
+
+.linhaFinal {
+    border: none; /* Remove as bordas padrão */
+    height: 2px; /* Define a altura da linha */
+    background-color: #9E6730; /* Cor da linha */
+    margin: 50px 0; /* Espaçamento acima e abaixo da linha */
+    margin-top: 60px;
+}

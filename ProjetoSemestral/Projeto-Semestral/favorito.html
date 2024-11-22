@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorito</title>
+    <link rel="stylesheet" href="favorito.css">
+
+</head>
+
+<body onload="iniciarPerguntaComNarracao()">
+    <div class="barraInicial"></div>
+
+    <header>
+
+        <div class="containerLogo">
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+            <img src="imgprojeto/coracao-removebg-preview.png" alt="">
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+            <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin">
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+            <span id="contador">0</span>
+        </div>
+
+
+    </header>
+    <div class="barraAdicional"></div>
+
+    <footer>
+        <div class="junto">
+            <div class="textol">
+                <p class="big">Favorito</p>
+            </div>
+            <a href="index.html"><img src="imgprojeto/swta-removebg-preview.png" alt=""></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div class="containerLivros">
+        <div class="livro">
+            <img src="imgprojeto/lady.jpg" alt="Lady Killers">
+            <div class="informacoes">
+                <h1>Lady Killers</h1>
+                <h5 class="autor">Tori Telfer</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/vidasEternas.jpg" alt="Vidas Eternas">
+            <div class="informacoes">
+                <h1>Vidas Eternas</h1>
+                <h5 class="autor">Victoria Aveyard</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/aselecao.jpg" alt="A Seleção">
+            <div class="informacoes">
+                <h1>A Seleção</h1>
+                <h5 class="autor">Kiera Cass</h5>
+                <span>R$12.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/domcasmurro.jpg" alt="Dom Casmurro ">
+            <div class="informacoes">
+                <h1>Dom Casmurro </h1>
+                <h5 class="autor">Machado de Assis</h5>
+                <span>R$16.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/iraceema.png" alt="Iracema">
+            <div class="informacoes">
+                <h1>Iracema</h1>
+                <h5 class="autor">José de Alencar</h5>
+                <span>R$16.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/luzesdanoite7.jpg" alt="Luzes do Norte">
+            <div class="informacoes">
+                <h1>Luzes do Norte</h1>
+                <h5 class="autor">Giu Domingues</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="final"></footer>
+
+    <script src="favorito.js"></script>
+    <script>
+        function iniciarPerguntaComNarracao() {
+            // setTimeout aguarda 3000 milissegundos (3 segundos) e então chama a função fazerPergunta
+            setTimeout(fazerPergunta, 3000);
+        }
+
+        // Função que cria e executa a narração da pergunta00
+        function fazerPergunta() {
+            const pergunta = "Bem vindo a pagina de favoritos, deseja saber quais são os livros?"; // Texto da pergunta a ser narrada
+
+            // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+            const narrador = new SpeechSynthesisUtterance(pergunta);
+
+            // Define o idioma da narração como português do Brasil
+            narrador.lang = 'pt-BR';
+
+            // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+            narrador.onend = iniciarReconhecimentoDeVoz;
+
+            // Executa a narração com o texto da pergunta
+            window.speechSynthesis.speak(narrador);
+            // fazerPergunta2()
+        }
+        function fazerPergunta2() {
+            const pergunta = "tudo bem"; // Texto da pergunta a ser narrada
+
+            // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+            const narrador = new SpeechSynthesisUtterance(pergunta);
+
+            // Define o idioma da narração como português do Brasil
+            narrador.lang = 'pt-BR';
+
+            // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+            narrador.onend = iniciarReconhecimentoDeVoz;
+
+            // Executa a narração com o texto da pergunta
+            window.speechSynthesis.speak(narrador);
+        }
+
+        // Função para iniciar o reconhecimento de voz e capturar a resposta do usuário
+        function iniciarReconhecimentoDeVoz() {
+            // Cria um novo objeto de reconhecimento de voz usando SpeechRecognition (ou webkitSpeechRecognition para compatibilidade)
+            const reconhecimento = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+
+            // Define o idioma de reconhecimento como português do Brasil
+            reconhecimento.lang = 'pt-BR';
+
+            // Inicia o reconhecimento de voz
+            reconhecimento.start();
+
+            // Evento que é chamado quando uma resposta de voz é capturada
+            reconhecimento.onresult = (evento) => {
+                // Armazena a transcrição da resposta em texto minúsculo para facilitar a comparação
+                const resposta = evento.results[0][0].transcript.toLowerCase();
+
+                // Chama a função redirecionarUsuario com a resposta capturada
+                redirecionarUsuario(resposta);
+            };
+
+            // Evento de erro que ocorre se o reconhecimento de voz falhar
+            reconhecimento.onerror = (erro) => {
+                // Exibe o erro no console e mostra um alerta ao usuário
+                console.error("Erro no reconhecimento de voz:", erro);
+                alert("Desculpe, não consegui entender. Por favor, tente novamente.");
+            };
+        }
+
+        // Função que verifica a resposta do usuário e redireciona conforme a palavra detectada
+        function redirecionarUsuario(resposta) {
+            // Verifica se a palavra "youtube" está incluída na resposta
+            if (resposta.includes("sim")) {
+                // Redireciona o usuário para o site do YouTube
+                const pergunta = "Certo, os livros são: A branca de neve, Cinderela e rapunzel"; // Texto da pergunta a ser narrada
+
+                // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+                const narrador = new SpeechSynthesisUtterance(pergunta);
+
+                // Define o idioma da narração como português do Brasil
+                narrador.lang = 'pt-BR';
+
+                // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+                narrador.onend = iniciarReconhecimentoDeVoz;
+
+                // Executa a narração com o texto da pergunta
+                window.speechSynthesis.speak(narrador);
+                // fazerPergunta2()
+            } else {
+                // Se a palavra "YouTube" não for detectada, avisa o usuário para tentar novamente
+                // Redireciona o usuário para o site do YouTube
+                const pergunta = "ok"; // Texto da pergunta a ser narrada
+
+                // Cria um novo objeto de narração usando a API SpeechSynthesisUtterance
+                const narrador = new SpeechSynthesisUtterance(pergunta);
+
+                // Define o idioma da narração como português do Brasil
+                narrador.lang = 'pt-BR';
+
+                // Define o que fazer quando a narração terminar: iniciar o reconhecimento de voz
+                narrador.onend = iniciarReconhecimentoDeVoz;
+
+                // Executa a narração com o texto da pergunta
+                window.speechSynthesis.speak(narrador);
+                // fazerPergunta2()
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

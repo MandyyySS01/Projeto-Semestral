@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz da Leitura - Romance</title>
+    <link rel="stylesheet" href="romance.css">
+</head>
+<body>
+    
+    <div class="barraInicial"></div>
+    
+    <header>
+        <div class="containerLogo"> 
+            <img src="imgprojeto/1-removebg-preview (1).png" class="logo" alt="Logo">
+        </div>
+
+        <input type="text" class="barraPesquisa" placeholder="Pesquisar...">
+
+        <div class="minhaLista">
+           <a href="favorito.html"> <img src="imgprojeto/coracao-removebg-preview.png" alt=""></a>
+            <h1>Minha Lista</h1>
+        </div>
+
+        <a href="login.html" class="login">
+            <img src="imgprojeto/login-removebg-preview.png" alt="Login" class="iconLogin">
+        </a>
+
+        <div class="carrinho">
+            <img src="imgprojeto/carrinho-removebg-preview.png" alt="">
+            <span id="contador">0</span>
+        </div>
+
+    </header>
+
+    
+
+    <div class="barraAdicional"></div>
+
+    
+    <div class="romance">
+        <img src="imgprojeto/Texto do seu parágrafo (2).png" alt="Imagem do Romance">
+    </div>
+
+    <footer>
+        <div class="junto">
+            <div class="textol">
+        <p class="big">Romance</p></div>
+        <a href="index.html"><img src="imgprojeto/swta-removebg-preview.png" alt=""></a>
+    </div>
+    </footer>
+
+
+
+
+
+    <!-- Livros -->
+    <div class="containerLivros">
+        <div class="livro">
+            <img src="imgprojeto/soldeprimavera.jpg" alt="Meu Sol de Primavera">
+            <div class="informacoes">
+                <h1>Meu Sol de Primavera</h1>
+                <h5 class="autor">Queren Ane</h5>
+                <span>R$20.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                </div>
+                <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+                <div id="notificacaoFavorito" class="notificacao">Adicionado aos Favoritos!</div>
+                </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/aselecao.jpg" alt="A Seleção">
+            <div class="informacoes">
+                <h1>A Seleção</h1>
+                <h5 class="autor">Kiera Cass</h5>
+                <span>R$15.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+             </div>
+             <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+
+        <div class="livro">
+            <img src="imgprojeto/euteameiem.jpg" alt="Eu te amei em outra vida">
+            <div class="informacoes">
+                <h1>Eu te amei em outra vida</h1>
+                <h5 class="autor">David Arnold</h5> 
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                </div>
+                <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/princesadascinzas.jpg" alt="Princesa das Cinzas">
+            <div class="informacoes">
+                <h1>Princesa das Cinzas</h1>
+                <h5 class="autor">Laura Sebastian</h5>
+                <span>R$14.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/eassimqueacaba.jpg" alt="É assim que acaba">
+            <div class="informacoes">
+                <h1>É assim que acaba</h1>
+                <h5 class="autor">Colleen Hoover</h5>
+                <span>R$18.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/imperfeitos.jpg" alt="Imperfeitos">
+            <div class="informacoes">
+                <h1>Imperfeitos</h1>
+                <h5 class="autor">Colleen Hoover</h5>
+                <span>R$10.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/ateoveraoterminar.jpg" alt="Até o Verão Terminar">
+            <div class="informacoes">
+                <h1>Até o Verão Terminar</h1>
+                <h5 class="autor">Colleen Hoover</h5>
+                <span>R$22.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+              </div>
+              <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    
+        <div class="livro">
+            <img src="imgprojeto/pertoDocora.png" alt="Perto do Coração Selvagem">
+            <div class="informacoes">
+                <h1>Perto do Coração Selvagem</h1>
+                <h5 class="autor">Clarice Lispector</h5>
+                <span>R$30.00</span>
+                <div class="linha"><button class="botao-comprar" onclick="adicionarAoCarrinho()">Comprar</button> </div>
+                <div id="notificacao" class="notificacao">Produto adicionado ao carrinho!</div>
+                 </div>
+                 <img class="heart"src="imgprojeto/coracaosemcor.png" alt="Coração vazio"onclick="mudarCoracao(this)">
+        </div>
+    </div>
+
+    <footer class="final">  </footer>
+
+
+    <script src="romance.js"></script>
+    
+    <script>
+        const logo = document.getElementById("logo")
+        function animar() {
+           logo.style.animation=""
+           setTimeout(() =>logo.style.animation="arrasta 1s linear",5)
+           logo.style.left="280px"
+        }
+        function voltar() {
+            logo.style.animation=""
+           setTimeout(() =>logo.style.animation="voltar 1s linear",5)
+           logo.style.left=""
+        }
+    </script>
+</body>
+</html>
